@@ -21,6 +21,24 @@ android_library {
 }
 
 android_library {
+
+    name: "org.derpfest.support",
+
+    optimize: {
+        enabled: false,
+    },
+
+   srcs: ["src/**/*.java"],
+
+    static_libs: [
+        "androidx.cardview_cardview",
+    ],
+
+    resource_dirs: ["res"],
+
+}
+
+android_library {
     name: "org.lineageos.platform.internal",
 
     srcs: ["src_los/**/*.java"],
